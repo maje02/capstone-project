@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Hanseatic Help e.V.",
+    "street": "Große Elbstraße",
+    "number": "264",
+    "zip_code": "22767",
+    "city": "Hamburg",
+    "categories": ["Kleidung", "Schlafsäcke"]
+  },
+  {
+    "name": "Stilbruch - Altona",
+    "street": "Ruhrstraße",
+    "number": "51",
+    "zip_code": "22761",
+    "city": "Hamburg",
+    "categories": [
+      "Möbel",
+      "Haushaltsgegenstände",
+      "Kleidung",
+      "Elektronik",
+      "Spielzeug"
+    ]
+  },
+  {
+    "name": "Stilbruch - Wandsbek",
+    "street": "Helbingstraße",
+    "number": "63",
+    "zip_code": "21073",
+    "city": "Hamburg",
+    "categories": [
+      "Möbel",
+      "Haushaltsgegenstände",
+      "Kleidung",
+      "Elektronik",
+      "Spielzeug"
+    ]
+  },
+  {
+    "name": "Stilbruch - Harburg",
+    "street": "Lüneburger Straße",
+    "number": "39",
+    "zip_code": "22047",
+    "city": "Hamburg",
+    "categories": [
+      "Möbel",
+      "Haushaltsgegenstände",
+      "Kleidung",
+      "Elektronik",
+      "Spielzeug"
+    ]
+  }
+]
