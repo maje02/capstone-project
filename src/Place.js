@@ -19,31 +19,46 @@ export default function Place({
       <PlaceAddress>
         {zip_code} {city}
       </PlaceAddress>
-      <PlaceCategories>{categories}</PlaceCategories>
+      <PlaceCategories>{renderCategories(categories)}</PlaceCategories>
     </PlaceBody>
   )
+
+  function renderCategories(categories) {
+    return categories.map(category => <PlaceCategory>{category}</PlaceCategory>)
+  }
 }
 const PlaceBody = styled.section`
   position: relative;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 20px;
   background: #f7f7f7;
   box-shadow: 0 10px 10px #0002;
 `
-const PlaceName = styled.h2`
+const PlaceName = styled.p`
   font-family: sans-serif;
   color: #637f68;
+  text-align: left;
+  text-transform: uppercase;
 `
 
 const PlaceAddress = styled.p`
   font-family: serif;
   font-size: 0.8em;
   color: #d8d8d8;
+  text-align: left;
+  margin: 5px;
 `
-const PlaceCategories = styled.p`
+const PlaceCategories = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+`
+const PlaceCategory = styled.p`
   font-family: sans-serif;
   font-size: 0.8em;
   color: #b77373;
+  text-transform: uppercase;
+  margin: 2px 5px;
 `
 
 Place.propTypes = {
@@ -52,5 +67,5 @@ Place.propTypes = {
   number: PropTypes.string.isRequired,
   zip_code: PropTypes.string.isRequired,
   city: PropTypes.string.isRequired,
-  categories: PropTypes.string.isRequired,
+  categories: PropTypes.array.isRequired,
 }
