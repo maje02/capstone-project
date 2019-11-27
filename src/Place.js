@@ -37,7 +37,6 @@ const PlaceBody = styled.section`
   box-shadow: 0 10px 10px #0002;
 `
 const PlaceName = styled.p`
-  font-family: sans-serif;
   color: #637f68;
   text-align: left;
   text-transform: uppercase;
@@ -45,7 +44,7 @@ const PlaceName = styled.p`
 `
 
 const PlaceAddress = styled.p`
-  font-family: serif;
+  font-family: 'Noto Serif JP';
   font-size: 0.9rem;
   color: #6c6c63;
   text-align: left;
@@ -57,7 +56,6 @@ const PlaceCategories = styled.div`
   justify-content: flex-end;
 `
 const PlaceCategory = styled.p`
-  font-family: sans-serif;
   font-size: 0.7rem;
   color: #b77373;
   text-transform: uppercase;

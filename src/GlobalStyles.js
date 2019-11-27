@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 :root {
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0px;
     text-align: center;
     height: 100vh;

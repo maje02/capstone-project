@@ -1,11 +1,9 @@
 import React from 'react'
 
 import Place from './Place'
-import placeData from './places.json'
+import places from './places.json'
 
 export default function Home() {
-  const places = placeData
-
   return places
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ name, street, number, zip_code, city, categories }, index) => (
