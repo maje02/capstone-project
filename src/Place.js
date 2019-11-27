@@ -23,13 +23,15 @@ export default function Place({
     </PlaceBody>
   )
 
-  function renderCategories(categories) {
-    return categories.map(category => <PlaceCategory>{category}</PlaceCategory>)
+  function renderCategories(categories, index) {
+    return categories.map(category => (
+      <PlaceCategory key={index}>{category}</PlaceCategory>
+    ))
   }
 }
 const PlaceBody = styled.section`
   position: relative;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 20px;
   background: #f7f7f7;
   box-shadow: 0 10px 10px #0002;
@@ -39,26 +41,27 @@ const PlaceName = styled.p`
   color: #637f68;
   text-align: left;
   text-transform: uppercase;
+  margin: 0 0 5px 0;
 `
 
 const PlaceAddress = styled.p`
   font-family: serif;
-  font-size: 0.8em;
-  color: #d8d8d8;
+  font-size: 0.9rem;
+  color: #6c6c63;
   text-align: left;
-  margin: 5px;
+  margin: 0;
 `
 const PlaceCategories = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: flex-end;
 `
 const PlaceCategory = styled.p`
   font-family: sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7rem;
   color: #b77373;
   text-transform: uppercase;
-  margin: 2px 5px;
+  margin: 2px 4px;
 `
 
 Place.propTypes = {

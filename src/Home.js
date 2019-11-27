@@ -6,8 +6,9 @@ import placeData from './places.json'
 export default function Home() {
   const places = placeData
 
-  return places.map(
-    ({ name, street, number, zip_code, city, categories }, index) => (
+  return places
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(({ name, street, number, zip_code, city, categories }, index) => (
       <Place
         key={index}
         name={name}
@@ -17,6 +18,5 @@ export default function Home() {
         city={city}
         categories={categories}
       />
-    )
-  )
+    ))
 }
