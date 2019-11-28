@@ -1,20 +1,23 @@
 import React from 'react'
-
-import Place from './Place'
 import places from './places.json'
+import City from './City'
 
 export default function Home() {
-  return places
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map(({ name, street, number, zip_code, city, categories }, index) => (
-      <Place
-        key={index}
-        name={name}
-        street={street}
-        number={number}
-        zip_code={zip_code}
-        city={city}
-        categories={categories}
-      />
-    ))
+  return <>{renderCities()} </>
+
+  function renderCities() {
+    const allCities = places.map(place => place.city)
+    const cities = allCities.filter(
+      (city, index) => allCities.indexOf(city) === index
+    )
+    return cities
+      .sort((a, b) => a.localeCompare(b))
+      .map((city, index) => (
+        <City
+          key={index}
+          places={places.filter(place => place.city === city)}
+          city={city}
+        />
+      ))
+  }
 }

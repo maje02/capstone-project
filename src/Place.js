@@ -41,6 +41,7 @@ const PlaceName = styled.p`
   text-align: left;
   text-transform: uppercase;
   margin: 0 0 5px 0;
+  font-weight: bold;
 `
 
 const PlaceAddress = styled.p`
@@ -54,12 +55,14 @@ const PlaceCategories = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: flex-end;
+  margin-top: 5px;
 `
 const PlaceCategory = styled.p`
   font-size: 0.7rem;
   color: #b77373;
   text-transform: uppercase;
   margin: 2px 4px;
+  font-weight: bolder;
 `
 
 Place.propTypes = {

@@ -48,5 +48,75 @@
       "Elektronik",
       "Spielzeug"
     ]
+  },
+  {
+    "name": "WarenGut",
+    "street": "Borselstraße",
+    "number": "3",
+    "zip_code": "22765",
+    "city": "Hamburg",
+    "categories": [
+      "Möbel",
+      "Haushaltsgegenstände",
+      "Kleidung",
+      "Elektronik",
+      "Bücher"
+    ]
+  },
+  {
+    "name": "FAIRKAUFHAUS",
+    "street": "Altonaer Straße",
+    "number": "6-8",
+    "zip_code": "13581",
+    "city": "Berlin",
+    "categories": ["Haushaltsgegenstände", "Kleidung"]
+  },
+  {
+    "name": "GebrauchtWarenHaus Sendling",
+    "street": "Bavariastraße",
+    "number": "30-36",
+    "zip_code": "80336",
+    "city": "München",
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
+  },
+  {
+    "name": "GebrauchtWarenHaus Westend",
+    "street": "Landsbergerstraße",
+    "number": "146",
+    "zip_code": "80339",
+    "city": "München",
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
+  },
+  {
+    "name": "NähWerk",
+    "street": "Schwanthalerstraße",
+    "number": "79",
+    "zip_code": "80336",
+    "city": "München",
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
+  },
+  {
+    "name": "Kleiderkammer Marzahn",
+    "street": "Sella-Hasse-Straße",
+    "number": "19-21",
+    "zip_code": "12687",
+    "city": "Berlin",
+    "categories": ["Kleidung"]
+  },
+  {
+    "name": "Kleiderkammer",
+    "street": "Galenstraße",
+    "number": "29",
+    "zip_code": "13597",
+    "city": "Berlin",
+    "categories": ["Kleidung"]
+  },
+  {
+    "name": "Kleiderkammer",
+    "street": "Ebersstraße",
+    "number": "80 a",
+    "zip_code": "10827",
+    "city": "Berlin",
+    "categories": ["Kleidung"]
   }
 ]
