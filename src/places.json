@@ -5,6 +5,11 @@
     "number": "264",
     "zip_code": "22767",
     "city": "Hamburg",
+    "phone": "+49 40 210919070",
+    "mail": "info@hanseatic-help.org",
+    "websiteURL": "https://www.hanseatic-help.org/",
+    "opening_times": "Mo, Di, Do, Fr 10-19h & Sa, So 12-18h",
+    "description": "Hanseatic Help versorgt und unterstützt Geflüchtete, Obdachlose und andere Mitmenschen kostenlos mit Kleidung und anderen Artikeln des täglichen Bedarfs und leistet logistische Unterstützung für andere soziale Organisationen in Hamburg und anderen Bundesländern.",
     "categories": ["Kleidung", "Schlafsäcke"]
   },
   {
@@ -13,6 +18,11 @@
     "number": "51",
     "zip_code": "22761",
     "city": "Hamburg",
+    "phone": "+49 40 25762222",
+    "mail": "info@stilbruch.de",
+    "websiteURL": "https://www.stilbruch.de/",
+    "opening_times": "Mo - Sa 10-18h",
+    "description": "Einfacher als Flohmarkt: Stilbruch bietet in den 3 Filialen in Altona, Wandsbek und Harburg tausende gebrauchte Artikel zu fairen Preisen unter einem Dach:  Als Tochterunternehmen der Stadtreinigung Hamburg erhalten wir täglich fünf bis sechs LKW-Ladungen gebrauchter Waren, die unsere Kollegen in Hamburg vor dem Sperrmüll oder bei Haushaltsauflösungen retten. Außerdem erhalten wir täglich auch viele private Spenden.",
     "categories": [
       "Möbel",
       "Haushaltsgegenstände",
@@ -27,6 +37,11 @@
     "number": "63",
     "zip_code": "21073",
     "city": "Hamburg",
+    "phone": "+49 40 25762222",
+    "mail": "info@stilbruch.de",
+    "websiteURL": "https://www.stilbruch.de/",
+    "opening_times": "Mo - Sa 10-18h",
+    "description": "Einfacher als Flohmarkt: Stilbruch bietet in den 3 Filialen in Altona, Wandsbek und Harburg tausende gebrauchte Artikel zu fairen Preisen unter einem Dach:  Als Tochterunternehmen der Stadtreinigung Hamburg erhalten wir täglich fünf bis sechs LKW-Ladungen gebrauchter Waren, die unsere Kollegen in Hamburg vor dem Sperrmüll oder bei Haushaltsauflösungen retten. Außerdem erhalten wir täglich auch viele private Spenden.",
     "categories": [
       "Möbel",
       "Haushaltsgegenstände",
@@ -41,6 +56,11 @@
     "number": "39",
     "zip_code": "22047",
     "city": "Hamburg",
+    "phone": "+49 40 25762222",
+    "mail": "info@stilbruch.de",
+    "websiteURL": "https://www.stilbruch.de/",
+    "opening_times": "Mo - Sa 10-18h",
+    "description": "Einfacher als Flohmarkt: Stilbruch bietet in den 3 Filialen in Altona, Wandsbek und Harburg tausende gebrauchte Artikel zu fairen Preisen unter einem Dach:  Als Tochterunternehmen der Stadtreinigung Hamburg erhalten wir täglich fünf bis sechs LKW-Ladungen gebrauchter Waren, die unsere Kollegen in Hamburg vor dem Sperrmüll oder bei Haushaltsauflösungen retten. Außerdem erhalten wir täglich auch viele private Spenden.",
     "categories": [
       "Möbel",
       "Haushaltsgegenstände",
@@ -55,6 +75,11 @@
     "number": "3",
     "zip_code": "22765",
     "city": "Hamburg",
+    "phone": "+ 49 40 30391710",
+    "mail": "warengut@grone.de",
+    "websiteURL": "http://warengut-grone.de/",
+    "opening_times": "Mo - Fr 09.30-17.30h",
+    "description": "Unser Ziel ist es, Dinge des täglichen Gebrauchs zu recyceln und kostengünstig weiterzugeben. Dies verbinden wir mit der sinnvollen Beschäftigung von ehemaligen Langzeitarbeitslosen. Unsere engagierten Mitarbeiter arbeiten teils auf der Basis von FAV-Verträgen, teils im Rahmen einer AGH-Maßnahme in den Bereichen Büro, Verkauf und Lager/Transport. Durch großzügige Spenden von HamburgerInnen ist es uns möglich, Möbel, Einrichtungsgegenstände, Hausrat, Bücher, Kleidung und Spielzeug günstig zu verkaufen und so einen Beitrag zur Unterstützung für einkommensschwächere HamburgerInnen zu leisten. WarenGut wird von der Grone Netzwerk Hamburg GmbH -gemeinnützig- betrieben.",
     "categories": [
       "Möbel",
       "Haushaltsgegenstände",
@@ -69,6 +94,11 @@
     "number": "6-8",
     "zip_code": "13581",
     "city": "Berlin",
+    "phone": "+49 30 35105162",
+    "mail": "info@fairkaufhaus.de",
+    "websiteURL": "https://www.fairkaufhaus.de/",
+    "opening_times": "Mo - Fr 10-18h & Sa 10-14h",
+    "description": "Das Warenangebot im FAIRKAUFHAUS besteht ausschließlich aus Spenden. Damit wir diese Waren zu äußerst günstigen Preisen anbieten können, sind wir auf Ihre Hilfe angewiesen. Damit schaffen wir ein breites Warensortiment für Menschen mit geringem Einkommen und bieten Beschäftigungsgelegenheiten mit vielseitigen Qualifizierungsmöglichkeiten.",
     "categories": ["Haushaltsgegenstände", "Kleidung"]
   },
   {
@@ -77,6 +107,11 @@
     "number": "30-36",
     "zip_code": "80336",
     "city": "München",
+    "phone": "+49 89 7474680",
+    "mail": "gebrauchtwaren@weisser-rabe.de",
+    "websiteURL": "https://www.weisser-rabe.de/helfen-und-spenden/textil-und-warenspenden",
+    "opening_times": "Mo - Fr 10-17.30h & Sa 10-14.30h",
+    "description": "Ob Neuwertiges, Nützliches, Schönes oder Seltenes: die Gebrauchtwarenhäuser bieten Second-Hand-Waren aller Art an. Wir beschäftigen Menschen mit Unterstützungsbedarf, um ihnen den Einstieg in die Arbeitswelt zu ermöglichen.",
     "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
   },
   {
@@ -85,6 +120,11 @@
     "number": "146",
     "zip_code": "80339",
     "city": "München",
+    "phone": "+49 89 8894930",
+    "mail": "gebrauchtwaren@weisser-rabe.de",
+    "websiteURL": "https://www.weisser-rabe.de/helfen-und-spenden/textil-und-warenspenden",
+    "opening_times": "Mo - Fr 10-17.30h & Sa 10-14.30h",
+    "description": "Ob Neuwertiges, Nützliches, Schönes oder Seltenes: die Gebrauchtwarenhäuser bieten Second-Hand-Waren aller Art an. Wir beschäftigen Menschen mit Unterstützungsbedarf, um ihnen den Einstieg in die Arbeitswelt zu ermöglichen.",
     "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
   },
   {
@@ -93,6 +133,11 @@
     "number": "79",
     "zip_code": "80336",
     "city": "München",
+    "phone": "+49 89 51563797",
+    "mail": "naehwerk@weisser-rabe.de",
+    "websiteURL": "https://www.naehwerk.de",
+    "opening_times": "Mo - Fr 10-18h",
+    "description": "Wenn Sie gut erhaltene Damenkleidung, Handtaschen und Accessoires, Bett-, Tisch- und Haushaltswäsche abgeben möchten, nehmen wir Ihre Spenden sehr gerne entgegen. Auch Stoffspenden sind sehr wertvoll - unsere MitarbeiterInnen fertigen daraus Accessoires für die Boutique. Mit Ihrer Spende geben Sie Menschen mit Unterstützungsbedarf Arbeit.",
     "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
   },
   {
@@ -101,6 +146,11 @@
     "number": "19-21",
     "zip_code": "12687",
     "city": "Berlin",
+    "phone": "+49 30 8 9331912",
+    "mail": "service@drk-berlin-nordost.de",
+    "websiteURL": "http://www.drk-berlin-nordost.de/spenden/spenden-sie-kleidung/kleiderspende.html",
+    "opening_times": "Mo - Mi 10-14h & Container 24/7",
+    "description": "Der DRK Kreisverband Berlin-Nordost e.V. sammelt kontinuierlich gebrauchte Kleidung und Textilien, um diese an bedürftige Menschen weiterzugeben. Die Sachen können Sie entweder direkt in unser Kleiderkammer in der Sella-Hasse-Straße abgeben oder in den DRK-Kleidercontainern vor der Kleiderkammer einwerfen.",
     "categories": ["Kleidung"]
   },
   {
@@ -109,6 +159,11 @@
     "number": "29",
     "zip_code": "13597",
     "city": "Berlin",
+    "phone": "+49 30 35393725",
+    "mail": "j.smaglo-yildirim@drk-spandau.de",
+    "websiteURL": "https://www.drk-spandau.de/angebote/existenzsichernde-hilfe/kleiderkammern.html",
+    "opening_times": "Di 9-10.30 & Container 24/7",
+    "description": "Bundesweit versorgen viele DRK-Kleiderkammern Millionen von Menschen mit gut erhaltener Kleidung und Schuhen und vielen weiteren Gütern zur materiellen Grundversorgung. Wir helfen Menschen in Notlagen und schwierigen sozialen Situationen schnell und unbürokratisch mit diesem Angebot. Das ist möglich, da viele Menschen ihre Kleidung spenden. Die gebrauchte und gespendete Kleidung wird gewaschen, sortiert und an die verschiedenen Kleiderkammern in Deutschland verteilt.",
     "categories": ["Kleidung"]
   },
   {
@@ -117,6 +172,11 @@
     "number": "80 a",
     "zip_code": "10827",
     "city": "Berlin",
+    "phone": "+49 30 56730203",
+    "mail": "wasmuthi@drk-wilmersdorf.de",
+    "websiteURL": "https://www.drk-schoeneberg.de/angebote/kleiderkammer.html",
+    "opening_times": "Mo, Do 10-12 & Container 24/7",
+    "description": "Bundesweit versorgen viele DRK-Kleiderkammern Millionen von Menschen mit gut erhaltener Kleidung und Schuhen und vielen weiteren Gütern zur materiellen Grundversorgung. Wir helfen Menschen in Notlagen und schwierigen sozialen Situationen schnell und unbürokratisch mit diesem Angebot. Das ist möglich, da viele Menschen ihre Kleidung spenden. Die gebrauchte und gespendete Kleidung wird gewaschen, sortiert und an die verschiedenen Kleiderkammern in Deutschland verteilt.",
     "categories": ["Kleidung"]
   }
 ]
