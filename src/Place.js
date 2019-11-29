@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
+import PlaceCategories from './PlaceCategories'
 
 export default function Place({
   name,
@@ -32,19 +33,14 @@ export default function Place({
         </Contact>
       </ContactDetails>
       <Times>
-        Öffnungszeiten: <br></br>
+        Öffnungszeiten:
+        <br />
         {opening_times}
       </Times>
       <PlaceText>{description}</PlaceText>
-      <PlaceCategories>{renderCategories(categories)}</PlaceCategories>
+      <PlaceCategories categories={categories}></PlaceCategories>
     </PlaceBody>
   )
-
-  function renderCategories(categories, index) {
-    return categories
-      .sort((a, b) => a.localeCompare(b))
-      .map(category => <PlaceCategory key={index}>{category}</PlaceCategory>)
-  }
 }
 const PlaceBody = styled.section`
   position: relative;
@@ -93,22 +89,9 @@ const PlaceText = styled.p`
   font-family: 'Noto Serif JP';
   font-size: 0.9rem;
   color: #6c6c63;
-  text-align: left;
-  margin: 5px 0;
-`
-
-const PlaceCategories = styled.div`
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end;
-  margin-top: 5px;
-`
-const PlaceCategory = styled.p`
-  font-size: 0.8rem;
-  color: #b77373;
-  text-transform: uppercase;
-  margin: 2px 4px;
-  font-weight: bolder;
+  text-align: justify;
+  hyphens: auto;
+  margin: 8px 0;
 `
 
 Place.propTypes = {
