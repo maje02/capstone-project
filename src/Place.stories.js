@@ -14,6 +14,11 @@ export const standard = () => (
     number={number('Number', 'Number of Place')}
     zip_code={number('Zip_code', 'Zip_code of Place')}
     city={text('City', 'City of Place')}
+    phone={number('Phone Number', 'Phone number of Place')}
+    mail={text('Mail', 'E-Mail to Place')}
+    websiteURL={text('Website', 'Website of Place')}
+    opening_times={text('Opening Times', 'Opening Times of Place')}
+    description={text('Description', 'Description of Place')}
     categories={['Categories', 'Categories of Place']}
   />
 )

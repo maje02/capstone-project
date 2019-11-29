@@ -14,17 +14,39 @@ export default function City({ places }) {
   function renderPlaces() {
     return places
       .sort((a, b) => a.name.localeCompare(b.name))
-      .map(({ name, street, number, zip_code, city, categories }, index) => (
-        <Place
-          key={index}
-          name={name}
-          street={street}
-          number={number}
-          zip_code={zip_code}
-          city={city}
-          categories={categories}
-        />
-      ))
+      .map(
+        (
+          {
+            name,
+            street,
+            number,
+            zip_code,
+            city,
+            phone,
+            mail,
+            websiteURL,
+            opening_times,
+            description,
+            categories,
+          },
+          index
+        ) => (
+          <Place
+            key={index}
+            name={name}
+            street={street}
+            number={number}
+            zip_code={zip_code}
+            city={city}
+            phone={phone}
+            mail={mail}
+            websiteURL={websiteURL}
+            opening_times={opening_times}
+            description={description}
+            categories={categories}
+          />
+        )
+      )
   }
 }
 
