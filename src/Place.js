@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import PlaceCategories from './PlaceCategories'
+import arrowDown from './img/arrow-down.svg'
+import arrowUp from './img/arrow-up.svg'
 
 export default function Place({
   name,
@@ -16,6 +18,8 @@ export default function Place({
   description,
   categories,
 }) {
+  const [isHidden, setIsHidden] = useState(true)
+
   return (
     <PlaceBody>
       <PlaceName>{name}</PlaceName>
@@ -25,22 +29,34 @@ export default function Place({
       <PlaceAddress>
         {zip_code} {city}
       </PlaceAddress>
-      <ContactDetails>
-        <Contact href={'tel:' + phone}>{phone}</Contact>
-        <Contact href={'mailto:' + mail}>Mail</Contact>
-        <Contact href={websiteURL} target="_blank">
-          Website
-        </Contact>
-      </ContactDetails>
-      <Times>
-        Öffnungszeiten:
-        <br />
-        {opening_times}
-      </Times>
-      <PlaceText>{description}</PlaceText>
+      {!isHidden && (
+        <DetailsWrapper>
+          <ContactDetails>
+            <Contact href={'tel:' + phone}>{phone}</Contact>
+            <Contact href={'mailto:' + mail}>Mail</Contact>
+            <Contact href={websiteURL} target="_blank">
+              Website
+            </Contact>
+          </ContactDetails>
+          <Times>
+            Öffnungszeiten:
+            <br />
+            {opening_times}
+          </Times>
+          <PlaceText>{description}</PlaceText>
+        </DetailsWrapper>
+      )}
       <PlaceCategories categories={categories}></PlaceCategories>
+      <img
+        src={isHidden ? arrowDown : arrowUp}
+        onClick={toggleIsHidden}
+        alt="arrow"
+      />
     </PlaceBody>
   )
+  function toggleIsHidden() {
+    setIsHidden(!isHidden)
+  }
 }
 const PlaceBody = styled.section`
   position: relative;
@@ -56,7 +72,9 @@ const PlaceName = styled.p`
   margin: 0 0 5px 0;
   font-weight: bold;
 `
-
+const DetailsWrapper = styled.div`
+  display: grid;
+`
 const PlaceAddress = styled.p`
   font-family: 'Noto Serif JP';
   font-size: 0.9rem;
