@@ -54,7 +54,7 @@ const CitySection = styled.section`
   font-family: 'Noto Serif JP';
   color: #b77373;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 `
 City.propTypes = {
   places: PropTypes.array.isRequired,
