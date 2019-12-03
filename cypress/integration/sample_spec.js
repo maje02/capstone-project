@@ -1,4 +1,4 @@
-describe('Home', () => {
+/* describe('Home', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
@@ -15,4 +15,4 @@ describe('Home', () => {
         .click()
     })
   })
-})
+}) */

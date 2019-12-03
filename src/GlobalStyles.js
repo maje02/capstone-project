@@ -5,11 +5,14 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 :root {
     font-family: 'Julius Sans One', sans-serif;
     margin: 0px;
     text-align: center;
-    height: 100vh;
     background-color: #DAE1DB;
    
   

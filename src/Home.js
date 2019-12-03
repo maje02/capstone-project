@@ -1,9 +1,10 @@
 import React from 'react'
+import styled from 'styled-components/macro'
 import places from './places.json'
 import City from './City'
 
 export default function Home() {
-  return <>{renderCities()} </>
+  return <HomeWrapper>{renderCities()}</HomeWrapper>
 
   function renderCities() {
     const allCities = places.map(place => place.city)
@@ -21,3 +22,7 @@ export default function Home() {
       ))
   }
 }
+
+const HomeWrapper = styled.div`
+  overflow: scroll;
+`
