@@ -4,7 +4,7 @@ import places from './places.json'
 import City from './City'
 
 export default function Home() {
-  return <HomeBody>{renderCities()}</HomeBody>
+  return <HomeWrapper>{renderCities()}</HomeWrapper>
 
   function renderCities() {
     const allCities = places.map(place => place.city)
@@ -23,6 +23,6 @@ export default function Home() {
   }
 }
 
-const HomeBody = styled.div`
+const HomeWrapper = styled.div`
   overflow: scroll;
 `

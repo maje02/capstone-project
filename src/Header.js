@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export default styled.div`
+export default styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
