@@ -1,10 +1,16 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import places from './places.json'
+import FilterButton from './FilterButton'
 import City from './City'
 
 export default function Home() {
-  return <HomeWrapper>{renderCities()}</HomeWrapper>
+  return (
+    <HomeWrapper>
+      <FilterButton />
+      {renderCities()}
+    </HomeWrapper>
+  )
 
   function renderCities() {
     const allCities = places.map(place => place.city)
