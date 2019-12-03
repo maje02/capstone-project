@@ -5,12 +5,10 @@ import Home from './Home'
 
 function App() {
   return (
-    <div className="App">
-      <AppLayout>
-        <Header>make it stay</Header>
-        <Home />
-      </AppLayout>
-    </div>
+    <AppLayout>
+      <Header>make it stay</Header>
+      <Home />
+    </AppLayout>
   )
 }
 
