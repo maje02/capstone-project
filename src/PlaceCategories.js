@@ -20,7 +20,7 @@ const PlaceCategoriesStyled = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: flex-end;
-  margin-top: 5px;
+  margin: 4px;
 `
 const PlaceCategory = styled.p`
   font-size: 0.8rem;
