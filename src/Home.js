@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import places from './places.json'
 import FilterButton from './FilterButton'
+import FilterMenu from './FilterMenu'
 import City from './City'
 
 export default function Home() {
   return (
     <HomeWrapper>
       <FilterButton />
+      <FilterMenu categories={places.categories} />
       {renderCities()}
     </HomeWrapper>
   )
@@ -30,5 +32,6 @@ export default function Home() {
 }
 
 const HomeWrapper = styled.div`
+  position: relative;
   overflow: scroll;
 `
