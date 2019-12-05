@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
+import FilterCategory from './FilterCategory'
 
-export default function FilterMenu({ places }) {
+export default function FilterMenu({ places, selectCategory }) {
   return (
     <FilterMenuWrapper>
       <FilterHeadline>Filter</FilterHeadline>
@@ -17,9 +18,11 @@ export default function FilterMenu({ places }) {
     return categories
       .sort((a, b) => a.localeCompare(b))
       .map(category => (
-        <FilterCategory key={index}>
-          <FilterCheckbox type="checkbox" /> {category}
-        </FilterCategory>
+        <FilterCategory
+          key={index}
+          selectCategory={selectCategory}
+          category={category}
+        ></FilterCategory>
       ))
   }
 }
@@ -43,15 +46,6 @@ const FilterHeadline = styled.p`
   text-align: left;
   font-size: 0.9rem;
   margin: 0 0 8px 0;
-`
-const FilterCategory = styled.label`
-  font-family: 'Noto Serif JP';
-  font-size: 0.8rem;
-  display: block;
-`
-const FilterCheckbox = styled.input`
-  border-radius: 0;
-  background: hotpink;
 `
 
 FilterMenu.propTypes = {

@@ -7,11 +7,15 @@ import City from './City'
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState(false)
-
+  const [selectedCategory, setSelectedCategory] = useState([])
   return (
     <HomeWrapper>
       <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
-      {isClicked ? <FilterMenu places={places} /> : ''}
+      {isClicked ? (
+        <FilterMenu places={places} selectCategory={selectCategory} />
+      ) : (
+        ''
+      )}
       {renderCities()}
     </HomeWrapper>
   )
@@ -33,6 +37,12 @@ export default function Home() {
   }
   function toggleFilterMenu() {
     setIsClicked(!isClicked)
+  }
+  function selectCategory(category) {
+    setSelectedCategory({
+      ...selectedCategory,
+      [category]: !!selectedCategory,
+    })
   }
 }
 
