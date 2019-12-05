@@ -3,7 +3,6 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
 export default function FilterMenu({ places }) {
-  console.log(places)
   return (
     <FilterMenuWrapper>
       <FilterHeadline>Filter</FilterHeadline>
@@ -19,8 +18,7 @@ export default function FilterMenu({ places }) {
       .sort((a, b) => a.localeCompare(b))
       .map(category => (
         <FilterCategory key={index}>
-          {category}
-          <input type="checkbox" />
+          <FilterCheckbox type="checkbox" /> {category}
         </FilterCategory>
       ))
   }
@@ -29,14 +27,17 @@ export default function FilterMenu({ places }) {
 const FilterMenuWrapper = styled.section`
   position: absolute;
   top: 18px;
-  left: 20px;
+
   z-index: 1;
   display: grid;
-  padding: 10px;
+  grid-template-rows: 1fr 1fr;
+  justify-items: start;
+  padding: 20px;
   background: #e8e8e8;
   color: #6c6c63;
   font-family: 'Julius Sans One';
   border: 1px solid #6c6c63;
+  border-left: 0px;
 `
 const FilterHeadline = styled.p`
   text-align: left;
@@ -46,8 +47,13 @@ const FilterHeadline = styled.p`
 const FilterCategory = styled.label`
   font-family: 'Noto Serif JP';
   font-size: 0.8rem;
+  display: block;
+`
+const FilterCheckbox = styled.input`
+  border-radius: 0;
+  background: hotpink;
 `
 
 FilterMenu.propTypes = {
-  categories: PropTypes.array.isRequired,
+  places: PropTypes.array.isRequired,
 }

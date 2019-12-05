@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import filter from './img/filter.svg'
 
-export default function FilterButton() {
+export default function FilterButton({ handleClick }) {
   return (
-    <FilterButtonStyled>
+    <FilterButtonStyled onClick={handleClick}>
       <FilterIcon src={filter} alt="filter" />
       Filter
     </FilterButtonStyled>

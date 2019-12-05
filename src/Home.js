@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import places from './places.json'
 import FilterButton from './FilterButton'
@@ -6,10 +6,12 @@ import FilterMenu from './FilterMenu'
 import City from './City'
 
 export default function Home() {
+  const [isClicked, setIsClicked] = useState(false)
+
   return (
     <HomeWrapper>
-      <FilterButton />
-      <FilterMenu places={places} />
+      <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
+      {isClicked ? <FilterMenu places={places} /> : ''}
       {renderCities()}
     </HomeWrapper>
   )
@@ -28,6 +30,9 @@ export default function Home() {
           city={city}
         />
       ))
+  }
+  function toggleFilterMenu() {
+    setIsClicked(!isClicked)
   }
 }
 
