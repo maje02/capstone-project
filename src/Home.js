@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <HomeWrapper>
       <FilterButton />
-      <FilterMenu categories={places.categories} />
+      <FilterMenu places={places} />
       {renderCities()}
     </HomeWrapper>
   )

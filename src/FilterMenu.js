@@ -2,14 +2,19 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
-export default function FilterMenu({ categories }, index) {
+export default function FilterMenu({ places }) {
+  console.log(places)
   return (
     <FilterMenuWrapper>
       <FilterHeadline>Filter</FilterHeadline>
-      {renderFilterCategories()}
+      {renderFilterCategories(places)}
     </FilterMenuWrapper>
   )
-  function renderFilterCategories() {
+  function renderFilterCategories(places, index) {
+    const allCategories = places.map(places => places.categories).flat()
+    const categories = allCategories.filter(
+      (categories, index) => allCategories.indexOf(categories) === index
+    )
     return categories
       .sort((a, b) => a.localeCompare(b))
       .map(category => (
