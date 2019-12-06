@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import FilterCategory from './FilterCategory'
 
-export default function FilterMenu({ places, selectCategory }) {
+export default function FilterMenu({ places, selectCategory, checked }) {
   return (
     <FilterMenuWrapper>
       <FilterHeadline>Filter</FilterHeadline>
@@ -22,6 +22,7 @@ export default function FilterMenu({ places, selectCategory }) {
           key={index}
           selectCategory={selectCategory}
           category={category}
+          checked={checked}
         ></FilterCategory>
       ))
   }

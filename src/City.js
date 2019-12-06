@@ -3,10 +3,16 @@ import styled from 'styled-components/macro'
 import Place from './Place'
 import PropTypes from 'prop-types'
 
-export default function City({ places }) {
+export default function City({ places = [] }) {
   return (
     <div>
-      <CitySection city={places[0].city}>--- {places[0].city} ---</CitySection>
+      {!(Array.isArray(places) && places.length > 0) ? (
+        ''
+      ) : (
+        <CitySection city={places[0].city}>
+          --- {places[0].city} ---
+        </CitySection>
+      )}
       {renderPlaces()}
     </div>
   )

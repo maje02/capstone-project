@@ -6,20 +6,20 @@ import FilterMenu from './FilterMenu'
 import City from './City'
 
 export default function Home() {
-  // eslint-disable-next-line no-restricted-globals
-
   const [isClicked, setIsClicked] = useState(false)
   const [categories, setCategories] = useState([
-    { name: 'Bücher', checked: false },
-    { name: 'Elektronik', checked: false },
-    { name: 'Kleidung', checked: false },
+    { name: 'Bücher', checked: true },
+    { name: 'Elektronik', checked: true },
+    { name: 'Kleidung', checked: true },
+    { name: 'Möbel', checked: true },
+    { name: 'Haushaltsgegenstände', checked: true },
+    { name: 'Spielzeug', checked: true },
+    { name: 'Schlafsäcke', checked: true },
   ])
   const checkedCategories = categories.map(item =>
     item.checked ? item.name : ''
   )
-  console.log(checkedCategories)
 
-  //   const [isSelected, setIsSelected] = useState(false)
   return (
     <HomeWrapper>
       <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
@@ -27,7 +27,7 @@ export default function Home() {
         <FilterMenu
           places={places}
           selectCategory={selectCategory}
-          //category={isSelected}
+          checked={getChecked}
         />
       ) : (
         ''
@@ -47,28 +47,28 @@ export default function Home() {
       .map((city, index) => (
         <City
           key={index}
-          places={places.filter(place => place.city === city)}
-          city={city}
-        >
-          {console.log(
-            places
-              .filter(place => place.city === city)
-              .filter(places =>
-                places.categories.some(arrayEl =>
-                  checkedCategories.some(item => item === arrayEl)
-                )
+          places={places
+            .filter(place => place.city === city)
+            .filter(singleCity =>
+              singleCity.categories.some(arrayEl =>
+                checkedCategories.some(item => item === arrayEl)
               )
-          )}
-        </City>
+            )}
+          city={city}
+        ></City>
       ))
   }
   function toggleFilterMenu() {
     setIsClicked(!isClicked)
   }
 
+  function getChecked(category) {
+    const index = categories.findIndex(element => element.name === category)
+    return categories[index].checked
+  }
+
   function selectCategory(category) {
     const index = categories.findIndex(element => element.name === category)
-    console.log(index)
 
     setCategories([
       ...categories.slice(0, index),

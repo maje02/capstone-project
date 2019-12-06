@@ -2,12 +2,16 @@ import React from 'react'
 import styled from 'styled-components/macro'
 //import PropTypes from 'prop-types'
 
-export default function FilterCategory({ category, selectCategory }, index) {
+export default function FilterCategory(
+  { category, selectCategory, checked },
+  index
+) {
   return (
     <FilterCategoryStyled key={index}>
       <FilterCheckbox
         type="checkbox"
         onClick={() => selectCategory(category)}
+        checked={checked(category)}
       />{' '}
       {category}
     </FilterCategoryStyled>
