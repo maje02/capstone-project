@@ -3,10 +3,16 @@ import styled from 'styled-components/macro'
 import Place from './Place'
 import PropTypes from 'prop-types'
 
-export default function City({ places }) {
+export default function City({ places = [] }) {
   return (
     <div>
-      <CitySection city={places[0].city}>--- {places[0].city} ---</CitySection>
+      {!(Array.isArray(places) && places.length > 0) ? (
+        ''
+      ) : (
+        <CitySection city={places[0].city}>
+          --- {places[0].city} ---
+        </CitySection>
+      )}
       {renderPlaces()}
     </div>
   )
@@ -54,7 +60,7 @@ const CitySection = styled.section`
   font-family: 'Noto Serif JP';
   color: #b77373;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 `
 City.propTypes = {
   places: PropTypes.array.isRequired,
