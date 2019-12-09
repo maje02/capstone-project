@@ -4,9 +4,11 @@ import places from './places.json'
 import FilterButton from './FilterButton'
 import FilterMenu from './FilterMenu'
 import City from './City'
+import Searchbar from './Searchbar.js'
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState(false)
+  const [input, setInput] = useState('')
   const [categories, setCategories] = useState([
     { name: 'Bücher', checked: true },
     { name: 'Elektronik', checked: true },
@@ -22,6 +24,7 @@ export default function Home() {
 
   return (
     <HomeWrapper>
+      <Searchbar onInput={event => setInput(event.target.value)} />
       <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
       {isClicked ? (
         <FilterMenu
