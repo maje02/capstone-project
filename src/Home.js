@@ -56,7 +56,25 @@ export default function Home() {
               singleCity.categories.some(arrayEl =>
                 checkedCategories.some(item => item === arrayEl)
               )
-            )}
+            )
+            .filter(item => {
+              const name = item.name.toLowerCase()
+              const street = item.street.toLowerCase()
+              const zip_code = item.zip_code.toLowerCase()
+              const city = item.city.toLowerCase()
+              const description = item.description.toLowerCase()
+              const categories = item.categories.join().toLowerCase()
+              const query = input.toLowerCase()
+              return (
+                query === '' ||
+                name.includes(query) ||
+                street.includes(query) ||
+                zip_code.includes(query) ||
+                city.includes(query) ||
+                description.includes(query) ||
+                categories.includes(query)
+              )
+            })}
           city={city}
         ></City>
       ))
