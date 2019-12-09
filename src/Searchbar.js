@@ -4,7 +4,7 @@ import search from './img/search.svg'
 
 export default function Searchbar({ onInput, onSubmit }) {
   return (
-    <Form>
+    <Form onSubmit={onSubmit}>
       <label htmlFor="search"></label>
 
       <SearchInput

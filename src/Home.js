@@ -24,7 +24,10 @@ export default function Home() {
 
   return (
     <HomeWrapper>
-      <Searchbar onInput={event => setInput(event.target.value)} />
+      <Searchbar
+        onInput={event => setInput(event.target.value)}
+        onSubmit={event => event.preventDefault()}
+      />
       <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
       {isClicked ? (
         <FilterMenu
@@ -35,7 +38,8 @@ export default function Home() {
       ) : (
         ''
       )}
-      {renderCities()}
+      {Array.isArray(places) && places.length > 0 ? renderCities() : 'no match'}{' '}
+      {/* wo fügt man das korrekt ein? */}
     </HomeWrapper>
   )
 
@@ -90,7 +94,6 @@ export default function Home() {
 
   function selectCategory(category) {
     const index = categories.findIndex(element => element.name === category)
-
     setCategories([
       ...categories.slice(0, index),
       {
