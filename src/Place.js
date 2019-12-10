@@ -33,9 +33,10 @@ export default function Place({
         <DetailsWrapper>
           <ContactDetails>
             <Contact href={'tel:' + phone}>{phone}</Contact>
-            <Contact href={'mailto:' + mail}>Mail</Contact>
+
+            <Contact href={'mailto:' + mail}>{mail ? 'Mail' : ''} </Contact>
             <Contact href={websiteURL} target="_blank">
-              Website
+              {websiteURL ? 'Website' : ''}
             </Contact>
           </ContactDetails>
           <Times>
