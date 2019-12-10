@@ -38,8 +38,7 @@ export default function Home() {
       ) : (
         ''
       )}
-      {Array.isArray(places) && places.length > 0 ? renderCities() : 'no match'}{' '}
-      {/* wo fügt man das korrekt ein? */}
+      {renderCities()}
     </HomeWrapper>
   )
 

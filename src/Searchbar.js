@@ -12,6 +12,7 @@ export default function Searchbar({ onInput, onSubmit }) {
         name="search"
         id="search"
         placeholder="Suche"
+        autofocus="true"
         onInput={onInput}
       ></SearchInput>
       <SearchSubmit id="search" type="submit" name="search" value="Suchen">
@@ -28,6 +29,7 @@ const Form = styled.form`
 `
 const SearchInput = styled.input`
   border: 1px solid grey;
+  border-radius: none;
   background: #f7f7f7;
   width: 150px;
   color: #6c6c63;
