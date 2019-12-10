@@ -30,8 +30,7 @@ export default function FilterMenu({ places, selectCategory, checked }) {
 
 const FilterMenuWrapper = styled.section`
   position: absolute;
-  top: 18px;
-
+  top: 78px;
   z-index: 1;
   display: grid;
   grid-template-rows: 1fr 1fr;

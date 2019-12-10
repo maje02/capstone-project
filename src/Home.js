@@ -4,9 +4,11 @@ import places from './places.json'
 import FilterButton from './FilterButton'
 import FilterMenu from './FilterMenu'
 import City from './City'
+import Searchbar from './Searchbar.js'
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState(false)
+  const [input, setInput] = useState('')
   const [categories, setCategories] = useState([
     { name: 'Bücher', checked: true },
     { name: 'Elektronik', checked: true },
@@ -22,6 +24,10 @@ export default function Home() {
 
   return (
     <HomeWrapper>
+      <Searchbar
+        onInput={event => setInput(event.target.value)}
+        onSubmit={event => event.preventDefault()}
+      />
       <FilterButton handleClick={() => toggleFilterMenu()}></FilterButton>
       {isClicked ? (
         <FilterMenu
@@ -53,7 +59,25 @@ export default function Home() {
               singleCity.categories.some(arrayEl =>
                 checkedCategories.some(item => item === arrayEl)
               )
-            )}
+            )
+            .filter(item => {
+              const name = item.name.toLowerCase()
+              const street = item.street.toLowerCase()
+              const zip_code = item.zip_code.toLowerCase()
+              const city = item.city.toLowerCase()
+              const description = item.description.toLowerCase()
+              const categories = item.categories.join().toLowerCase()
+              const query = input.toLowerCase()
+              return (
+                query === '' ||
+                name.includes(query) ||
+                street.includes(query) ||
+                zip_code.includes(query) ||
+                city.includes(query) ||
+                description.includes(query) ||
+                categories.includes(query)
+              )
+            })}
           city={city}
         ></City>
       ))
@@ -69,7 +93,6 @@ export default function Home() {
 
   function selectCategory(category) {
     const index = categories.findIndex(element => element.name === category)
-
     setCategories([
       ...categories.slice(0, index),
       {
