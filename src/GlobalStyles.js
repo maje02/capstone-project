@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components/macro'
 const GlobalStyles = createGlobalStyle`
 * {
     box-sizing: border-box;
+    scrollbar-width: none;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     margin: 0px;
     text-align: center;
     background-color: #DAE1DB;
+
    
   
 

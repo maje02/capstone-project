@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
-import places from './places.json'
+
 import FilterButton from './FilterButton'
 import FilterMenu from './FilterMenu'
 import City from './City'
 import Searchbar from './Searchbar.js'
 
-export default function Home() {
+export default function Home({ places }) {
   const [isClicked, setIsClicked] = useState(false)
   const [input, setInput] = useState('')
   const [categories, setCategories] = useState([
