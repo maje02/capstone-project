@@ -10,7 +10,8 @@
     "websiteURL": "https://www.hanseatic-help.org/",
     "opening_times": "Mo, Di, Do, Fr 10-19h & Sa, So 12-18h",
     "description": "Hanseatic Help versorgt und unterstützt Geflüchtete, Obdachlose und andere Mitmenschen kostenlos mit Kleidung und anderen Artikeln des täglichen Bedarfs und leistet logistische Unterstützung für andere soziale Organisationen in Hamburg und anderen Bundesländern.",
-    "categories": ["Kleidung", "Schlafsäcke"]
+    "categories": ["Kleidung", "Schlafsäcke"],
+    "location": [53.544859, 9.932821]
   },
   {
     "name": "Stilbruch - Altona",
@@ -29,7 +30,8 @@
       "Kleidung",
       "Elektronik",
       "Spielzeug"
-    ]
+    ],
+    "location": [53.565687, 9.924807]
   },
   {
     "name": "Stilbruch - Wandsbek",
@@ -48,7 +50,8 @@
       "Kleidung",
       "Elektronik",
       "Spielzeug"
-    ]
+    ],
+    "location": [53.586445, 10.095467]
   },
   {
     "name": "Stilbruch - Harburg",
@@ -67,7 +70,8 @@
       "Kleidung",
       "Elektronik",
       "Spielzeug"
-    ]
+    ],
+    "location": [53.460282, 9.981751]
   },
   {
     "name": "WarenGut",
@@ -86,7 +90,8 @@
       "Kleidung",
       "Elektronik",
       "Bücher"
-    ]
+    ],
+    "location": [53.55596, 9.925683]
   },
   {
     "name": "FAIRKAUFHAUS",
@@ -99,7 +104,8 @@
     "websiteURL": "https://www.fairkaufhaus.de/",
     "opening_times": "Mo - Fr 10-18h & Sa 10-14h",
     "description": "Das Warenangebot im FAIRKAUFHAUS besteht ausschließlich aus Spenden. Damit wir diese Waren zu äußerst günstigen Preisen anbieten können, sind wir auf Ihre Hilfe angewiesen. Damit schaffen wir ein breites Warensortiment für Menschen mit geringem Einkommen und bieten Beschäftigungsgelegenheiten mit vielseitigen Qualifizierungsmöglichkeiten.",
-    "categories": ["Haushaltsgegenstände", "Kleidung"]
+    "categories": ["Haushaltsgegenstände", "Kleidung"],
+    "location": [52.531911, 13.196165]
   },
   {
     "name": "GebrauchtWarenHaus Sendling",
@@ -112,7 +118,8 @@
     "websiteURL": "https://www.weisser-rabe.de/helfen-und-spenden/textil-und-warenspenden",
     "opening_times": "Mo - Fr 10-17.30h & Sa 10-14.30h",
     "description": "Ob Neuwertiges, Nützliches, Schönes oder Seltenes: die Gebrauchtwarenhäuser bieten Second-Hand-Waren aller Art an. Wir beschäftigen Menschen mit Unterstützungsbedarf, um ihnen den Einstieg in die Arbeitswelt zu ermöglichen.",
-    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"],
+    "location": [48.123309, 11.544875]
   },
   {
     "name": "GebrauchtWarenHaus Westend",
@@ -125,7 +132,8 @@
     "websiteURL": "https://www.weisser-rabe.de/helfen-und-spenden/textil-und-warenspenden",
     "opening_times": "Mo - Fr 10-17.30h & Sa 10-14.30h",
     "description": "Ob Neuwertiges, Nützliches, Schönes oder Seltenes: die Gebrauchtwarenhäuser bieten Second-Hand-Waren aller Art an. Wir beschäftigen Menschen mit Unterstützungsbedarf, um ihnen den Einstieg in die Arbeitswelt zu ermöglichen.",
-    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"],
+    "location": [48.140704, 11.530759]
   },
   {
     "name": "NähWerk",
@@ -138,9 +146,8 @@
     "websiteURL": "https://www.naehwerk.de",
     "opening_times": "Mo - Fr 10-18h",
     "description": "Wenn Sie gut erhaltene Damenkleidung, Handtaschen und Accessoires, Bett-, Tisch- und Haushaltswäsche abgeben möchten, nehmen wir Ihre Spenden sehr gerne entgegen. Auch Stoffspenden sind sehr wertvoll - unsere MitarbeiterInnen fertigen daraus Accessoires für die Boutique. Mit Ihrer Spende geben Sie Menschen mit Unterstützungsbedarf Arbeit.",
-    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"]
-
-
+    "categories": ["Möbel", "Haushaltsgegenstände", "Kleidung", "Bücher"],
+    "location": [48.137558, 11.553973]
   },
   {
     "name": "Kleiderkammer Marzahn",
@@ -153,7 +160,8 @@
     "websiteURL": "http://www.drk-berlin-nordost.de/spenden/spenden-sie-kleidung/kleiderspende.html",
     "opening_times": "Mo - Mi 10-14h & Container 24/7",
     "description": "Der DRK Kreisverband Berlin-Nordost e.V. sammelt kontinuierlich gebrauchte Kleidung und Textilien, um diese an bedürftige Menschen weiterzugeben. Die Sachen können Sie entweder direkt in unser Kleiderkammer in der Sella-Hasse-Straße abgeben oder in den DRK-Kleidercontainern vor der Kleiderkammer einwerfen.",
-    "categories": ["Kleidung"]
+    "categories": ["Kleidung"],
+    "location": [52.552952, 13.558355]
   },
   {
     "name": "Kleiderkammer",
@@ -166,7 +174,8 @@
     "websiteURL": "https://www.drk-spandau.de/angebote/existenzsichernde-hilfe/kleiderkammern.html",
     "opening_times": "Di 9-10.30 & Container 24/7",
     "description": "Bundesweit versorgen viele DRK-Kleiderkammern Millionen von Menschen mit gut erhaltener Kleidung und Schuhen und vielen weiteren Gütern zur materiellen Grundversorgung. Wir helfen Menschen in Notlagen und schwierigen sozialen Situationen schnell und unbürokratisch mit diesem Angebot. Das ist möglich, da viele Menschen ihre Kleidung spenden. Die gebrauchte und gespendete Kleidung wird gewaschen, sortiert und an die verschiedenen Kleiderkammern in Deutschland verteilt.",
-    "categories": ["Kleidung"]
+    "categories": ["Kleidung"],
+    "location": [52.53845, 13.19643]
   },
   {
     "name": "Kleiderkammer",
@@ -179,6 +188,94 @@
     "websiteURL": "https://www.drk-schoeneberg.de/angebote/kleiderkammer.html",
     "opening_times": "Mo, Do 10-12 & Container 24/7",
     "description": "Bundesweit versorgen viele DRK-Kleiderkammern Millionen von Menschen mit gut erhaltener Kleidung und Schuhen und vielen weiteren Gütern zur materiellen Grundversorgung. Wir helfen Menschen in Notlagen und schwierigen sozialen Situationen schnell und unbürokratisch mit diesem Angebot. Das ist möglich, da viele Menschen ihre Kleidung spenden. Die gebrauchte und gespendete Kleidung wird gewaschen, sortiert und an die verschiedenen Kleiderkammern in Deutschland verteilt.",
-    "categories": ["Kleidung"]
+    "categories": ["Kleidung"],
+    "location": [52.481237, 13.353658]
+  },
+  {
+    "name": "Möbelkeller",
+    "street": "Doormannsweg",
+    "number": "43",
+    "zip_code": "20259",
+    "city": "Hamburg",
+    "phone": "+49 40 329 632 66",
+    "mail": "moebelkeller@mookwat.de",
+    "websiteURL": "http://moebelkeller.mookwat.de/",
+    "opening_times": "Mo - Fr 10-18h",
+    "description": "Kaufhaus für gebrauchte Möbel, Dekoration und vieles mehr. Unser Möbelangebot verdanken wir Hamburger Spenderinnen und Spendern. Gern holen wir kostenlos auch Ihre funktionsfähigen Einrichtungsgegenstände, Dekorationsartikel und Haushaltswaren ab, die Sie nicht mehr verwenden, die aber noch zu schade zum Entsorgen sind.\nSie möchten uns Möbel spenden?\nBitte schicken Sie uns Fotos der Einrichtungsgestände sowie Ihre Kontaktdaten an moebelkeller@mookwat.de.\n",
+    "categories": ["Möbel", "Haushaltsgegenstände"],
+    "location": [53.568071, 9.953431]
+  },
+  {
+    "name": "Mook wat PC",
+    "street": "Elsässer Straße",
+    "number": "4",
+    "zip_code": "22049",
+    "city": "Hamburg",
+    "phone": "+49 40 658 653-53",
+    "mail": "info@mookwat-pc.de",
+    "websiteURL": "http://www.mookwat-pc.info/frontend/002_frontend/index.php",
+    "opening_times": "Mo - Do 8.30-11.30 & 12.30-14.30, Fr 8.30-11.30",
+    "description": "Wirtschaftsunternehmen wie auch Behörden spenden ihre funktionsfähigen Computer an unser gemeinnütziges Projekt Mook wat PC. Natürlich nehmen wir auch gerne Spenden von Privatpersonen entgegen.",
+    "categories": ["Elektronik"],
+    "location": [53.585364, 10.059358]
+  },
+  {
+    "name": "Umsonstladen Altona",
+    "street": "Bodenstedtstraße",
+    "number": "16",
+    "zip_code": "22765",
+    "city": "Hamburg",
+    "phone": "+49 40  22 85 93 41",
+    "mail": "umsonstladen@ak-loek.de",
+    "websiteURL": "https://www.ak-loek.de/umsonstladen/",
+    "opening_times": "Mo 16-18h, Di 18.30-20.30h, Mi 16-19h, Fr 10.30-16h, Sa 10-12.30h",
+    "description": "Der Umsonstladen ist kein Tauschladen. Es muss weder bezahlt, noch müssen Dinge direkt getauscht werden. Bringen und Holen, Geben und Nehmen sind hier entkoppelt, man kann nur Geben, man kann nur Nehmen, oder beides tun. Die Dinge sind hier alle Gebrauchsgegenstände, sie haben bei uns keinen Tauschwert, keinen Preis. Es können alle möglichen Dinge gebracht werden, die ein Mensch tragen kann, Kleidung sollte gewaschen und nicht kaputt sein (Bitte, nicht ‚zuviel auf einmal’ bringen). Haushaltsgeräte sollten funktionieren. ",
+    "categories": ["Kleidung", "Bücher", "Haushaltsgegenstände", "Elektronik"],
+    "location": [53.558526, 9.944113]
+  },
+  {
+    "name": "Tauschhaus Wagenplatz Zomia",
+    "street": "Max-Brauer-Allee",
+    "number": "220",
+    "zip_code": "22769",
+    "city": "Hamburg",
+    "opening_times": "24/7",
+    "description": "In den Tauschhäusern können kleine Mengen gut erhaltener Dinge abgestellt werden und dann von jemand anderem herausgenommen werden.",
+    "categories": ["Kleidung", "Bücher", "Haushaltsgegenstände"],
+    "location": [53.56286, 9.95851]
+  },
+  {
+    "name": "Tauschhaus Chemnitzstraße",
+    "street": "Chemnitzstraße/ Ecke Virchowstraße",
+    "number": "8",
+    "zip_code": "22767",
+    "city": "Hamburg",
+    "opening_times": "24/7",
+    "description": "In den Tauschhäusern können kleine Mengen gut erhaltener Dinge abgestellt werden und dann von jemand anderem herausgenommen werden.",
+    "categories": ["Kleidung", "Bücher", "Haushaltsgegenstände"],
+    "location": [53.555697, 9.948772]
+  },
+  {
+    "name": "Tauschhaus Schäferstraße",
+    "street": "Schäferstraße",
+    "number": "24",
+    "zip_code": "20357",
+    "city": "Hamburg",
+    "opening_times": "24/7",
+    "description": "In den Tauschhäusern können kleine Mengen gut erhaltener Dinge abgestellt werden und dann von jemand anderem herausgenommen werden.",
+    "categories": ["Kleidung", "Bücher", "Haushaltsgegenstände"],
+
+    "location": [53.568241, 9.966188]
+  },
+  {
+    "name": "Tauschhaus Bahrenfeld",
+    "street": "Bei der Paul-Gerhardt-Kirche",
+    "number": "1",
+    "zip_code": "22761",
+    "city": "Hamburg",
+    "opening_times": "24/7",
+    "description": "In den Tauschhäusern können kleine Mengen gut erhaltener Dinge abgestellt werden und dann von jemand anderem herausgenommen werden.",
+    "categories": ["Kleidung", "Bücher", "Haushaltsgegenstände"],
+    "location": [53.561707, 9.922121]
   }
 ]
