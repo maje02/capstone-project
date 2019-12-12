@@ -9,8 +9,9 @@ function App() {
   return (
     <AppLayout>
       <Header>make it stay</Header>
-      {/*  <Home places={places} /> */}
+      {/* <Home places={places} /> */}
       <WrappedMap places={places} />
+      <div>NAV</div>
     </AppLayout>
   )
 }

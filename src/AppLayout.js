@@ -2,8 +2,7 @@ import styled from 'styled-components/macro'
 
 export default styled.div`
   display: grid;
-  grid-template-rows: 48px auto;
-  grid-gap: 8px;
+  grid-template-rows: 48px auto 60px;
   height: 100vh;
   margin: 0;
 `
