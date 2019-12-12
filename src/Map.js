@@ -10,7 +10,7 @@ export default function Map({ places, index }) {
   return (
     <GoogleMap
       style={{ position: 'relative' }}
-      defaultZoom={10}
+      defaultZoom={12}
       defaultCenter={{
         lat: selectedPlace ? selectedPlace.location[0] : 53.551086,
         lng: selectedPlace ? selectedPlace.location[1] : 9.993682,
