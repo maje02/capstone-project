@@ -17,11 +17,12 @@ export default function Place({
   opening_times,
   description,
   categories,
+  ...props
 }) {
   const [isHidden, setIsHidden] = useState(true)
 
   return (
-    <PlaceBody>
+    <PlaceBody {...props}>
       <PlaceName>{name}</PlaceName>
       <PlaceAddress>
         {street} {number}
