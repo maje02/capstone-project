@@ -19,9 +19,8 @@ const db = firebase.firestore()
 
 /* const docRef = db.collection('Places') */
 
-export async function getData() {
+export function getData() {
   let places = []
-  console.log(places)
   db.collection('Places')
     .get()
     .then(function(querySnapshot) {
