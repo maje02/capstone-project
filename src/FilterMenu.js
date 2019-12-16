@@ -17,7 +17,7 @@ export default function FilterMenu({ places, selectCategory, checked }) {
     )
     return categories
       .sort((a, b) => a.localeCompare(b))
-      .map(category => (
+      .map((category, index) => (
         <FilterCategory
           key={index}
           selectCategory={selectCategory}

@@ -7,7 +7,7 @@ import Home from './Home'
 import WrappedMap from './WrappedMapContainer'
 import Navigation from './Navigation'
 
-/* import places from './places.json' */
+import places from './places.json'
 
 export default function App() {
   /*  const [places, setPlaces] = useState([])
@@ -21,10 +21,10 @@ export default function App() {
         <Header>make it stay</Header>
         <Switch>
           <Route exact path="/">
-            {/*  <Home places={places} /> */}
+            <Home places={places} />
           </Route>
           <Route path="/map">
-            {/*  <WrappedMap places={places} />{' '} */}
+            <WrappedMap places={places} />{' '}
           </Route>
         </Switch>
         <Navigation />

@@ -12,7 +12,7 @@ export default function Searchbar({ onInput, onSubmit }) {
         name="search"
         id="search"
         placeholder="Suche"
-        autofocus="true"
+        autoFocus={true}
         onInput={onInput}
       ></SearchInput>
       <SearchSubmit id="search" type="submit" name="search" value="Suchen">
