@@ -19,9 +19,20 @@ export default function FilterCategory(
 }
 
 const FilterCategoryStyled = styled.label`
+  -webkit-appearance: none;
   font-family: 'Noto Serif JP';
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: inline-flex;
+  padding: 5px;
   cursor: pointer;
   position: relative;
 `
+/* const FilterCheckbox = styled.input`
+  -webkit-appearance: none;
+  height: 10px;
+  border: 1px solid 'black';
+  color: 'hotpink';
+  &:checked + label {
+    background: 'pink';
+  }
+` */

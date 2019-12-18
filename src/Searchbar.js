@@ -36,10 +36,11 @@ const SearchIcon = styled.div`
   padding: 4px;
 `
 const SearchInput = styled.input`
+  -webkit-appearance: none;
   margin: 0px 0px 0px -1px;
   border: 1px solid #6c6c63;
   border-left: 0px;
-  border-radius: none;
+  border-radius: 0;
   padding: 4px;
   background: #f7f7f7;
   width: 150px;

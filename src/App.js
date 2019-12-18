@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React /* , { useState, useEffect }  */ from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { getData } from './services'
+/* import { getData } from './services' */
 import AppLayout from './AppLayout'
 import Header from './Header'
 import Home from './Home'

@@ -16,7 +16,7 @@ export default function Map({ places, index }) {
         lng: selectedPlace ? selectedPlace.location[1] : 9.943724,
       }}
     >
-      {places.map(place => (
+      {places.map((place, index) => (
         <Marker
           key={index}
           position={{ lat: place.location[0], lng: place.location[1] }}
