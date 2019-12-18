@@ -1,8 +1,6 @@
 import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 
-/* import places from './places.json' */
-
 var firebaseConfig = {
   apiKey: 'AIzaSyDXO4wDcavRRGPPzTKliz-Arm9CgGWynNk',
   authDomain: 'make-it-stay-1576060455017.firebaseapp.com',
@@ -17,35 +15,20 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 const db = firebase.firestore()
 
-/* const docRef = db.collection('Places') */
-
 export function getData() {
-  let places = []
-  db.collection('Places')
+  let array = []
+  return db
+    .collection('Places')
     .get()
     .then(function(querySnapshot) {
       querySnapshot.forEach(function(doc) {
-        // doc.data() is never undefined for query doc snapshots
-        places.push(doc.data())
-        /* console.log(doc.id, ' => ', doc.data()) */
+        array.push(doc.data())
       })
     })
-    .then(() => places)
+    .then(() => array)
 }
 
-/*  .get()
-    .then(function(collection) {
-      if (db.collection.exists) {
-        console.log(doc)
-      } else {
-        // doc.data() will be undefined in this case
-        console.log('No such document!')
-      }
-    })
-    .catch(function(error) {
-      console.log('Error getting document:', error)
-    }) */
-
+// To upload places to firestore
 /* export function setData() {
   places.forEach(item => docRef.add(item))
 } */
