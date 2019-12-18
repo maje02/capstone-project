@@ -6,18 +6,20 @@ export default function Searchbar({ onInput, onSubmit }) {
   return (
     <Form onSubmit={onSubmit}>
       <label htmlFor="search"></label>
-
+      <SearchIcon>
+        <img src={search} alt="search" />
+      </SearchIcon>
       <SearchInput
         type="search"
         name="search"
         id="search"
         placeholder="Suche"
-        autofocus="true"
+        autoFocus={true}
         onInput={onInput}
       ></SearchInput>
-      <SearchSubmit id="search" type="submit" name="search" value="Suchen">
+      {/* <SearchSubmit id="search" type="submit" name="search" value="Suchen">
         <img src={search} alt="search" />
-      </SearchSubmit>
+      </SearchSubmit> */}
     </Form>
   )
 }
@@ -27,9 +29,19 @@ const Form = styled.form`
   align-items: stretch;
   margin: 10px 20px 10px 20px;
 `
+
+const SearchIcon = styled.div`
+  border: 1px solid #6c6c63;
+  background: #f7f7f7;
+  padding: 4px;
+`
 const SearchInput = styled.input`
-  border: 1px solid grey;
-  border-radius: none;
+  -webkit-appearance: none;
+  margin: 0px 0px 0px -1px;
+  border: 1px solid #6c6c63;
+  border-left: 0px;
+  border-radius: 0;
+  padding: 4px;
   background: #f7f7f7;
   width: 150px;
   color: #6c6c63;
@@ -37,10 +49,10 @@ const SearchInput = styled.input`
   flex-grow: 1;
   font-size: 0.8rem;
 `
-const SearchSubmit = styled.button`
+/* const SearchSubmit = styled.button`
   border: 1px solid #f6d9d3;
   background: #f7f7f7;
   margin: -1px;
   background: #f6d9d3;
   padding: 4px;
-`
+` */

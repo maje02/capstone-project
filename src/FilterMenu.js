@@ -10,14 +10,14 @@ export default function FilterMenu({ places, selectCategory, checked }) {
       {renderFilterCategories(places)}
     </FilterMenuWrapper>
   )
-  function renderFilterCategories(places, index) {
+  function renderFilterCategories(places) {
     const allCategories = places.map(places => places.categories).flat()
     const categories = allCategories.filter(
       (categories, index) => allCategories.indexOf(categories) === index
     )
     return categories
       .sort((a, b) => a.localeCompare(b))
-      .map(category => (
+      .map((category, index) => (
         <FilterCategory
           key={index}
           selectCategory={selectCategory}
@@ -31,16 +31,17 @@ export default function FilterMenu({ places, selectCategory, checked }) {
 const FilterMenuWrapper = styled.section`
   position: absolute;
   top: 78px;
+  margin: 0px 20px;
   z-index: 1;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: start;
+  width: 332px;
   padding: 20px;
   background: #e8e8e8;
   color: #6c6c63;
   font-family: 'Julius Sans One';
   border: 1px solid #6c6c63;
-  border-left: 0px;
 `
 const FilterHeadline = styled.p`
   text-align: left;

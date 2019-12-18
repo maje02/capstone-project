@@ -9,10 +9,12 @@ export default function PlaceCategories({ categories }) {
     </PlaceCategoriesStyled>
   )
 
-  function renderCategories(categories, index) {
+  function renderCategories(categories) {
     return categories
       .sort((a, b) => a.localeCompare(b))
-      .map(category => <PlaceCategory key={index}>{category}</PlaceCategory>)
+      .map((category, index) => (
+        <PlaceCategory key={index}>{category}</PlaceCategory>
+      ))
   }
 }
 

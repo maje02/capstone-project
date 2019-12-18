@@ -12,11 +12,11 @@ export default function Map({ places, index }) {
       style={{ position: 'relative' }}
       defaultZoom={12}
       defaultCenter={{
-        lat: selectedPlace ? selectedPlace.location[0] : 53.551086,
-        lng: selectedPlace ? selectedPlace.location[1] : 9.993682,
+        lat: selectedPlace ? selectedPlace.location[0] : 53.565443,
+        lng: selectedPlace ? selectedPlace.location[1] : 9.943724,
       }}
     >
-      {places.map(place => (
+      {places.map((place, index) => (
         <Marker
           key={index}
           position={{ lat: place.location[0], lng: place.location[1] }}
