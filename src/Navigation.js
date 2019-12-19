@@ -6,6 +6,7 @@ export default function Navigation() {
   return (
     <NavigationWrapper>
       <NavItem to="/">HOME</NavItem>
+      <NavItem to="/add">ADD</NavItem>
       <NavItem to="/map">MAP</NavItem>
     </NavigationWrapper>
   )
