@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 export default function Form() {
   return (
     <FormWrapper>
-      <FormTitle>Orte hinzufügen</FormTitle>
+      <FormTitle>Neuer Make it stay-Ort</FormTitle>
       <FormQuestion>Name</FormQuestion>
       <FormInput
         name="name"
@@ -44,8 +44,10 @@ export default function Form() {
       <FormInput name="mail" placeholder="E-Mail-Adresse"></FormInput>
       <FormQuestion>Website</FormQuestion>
       <FormInput name="websiteURL" placeholder="Website"></FormInput>
+      <FormQuestion>Öffnungszeiten</FormQuestion>
+      <FormInput name="opening_times" placeholder="Öffnungszeiten"></FormInput>
       <FormQuestion>Was kann hier abgegeben werden?</FormQuestion>
-      <FormSelect name="categories" multiple={true} size="2">
+      <FormSelect name="categories[]" multiple="multiple" size="3">
         {/* <option value="">--Kategorien auswählen--</option> */}
         <option value="Bücher">Bücher</option>
         <option value="Elektronik">Elektronik</option>
@@ -64,6 +66,7 @@ const FormWrapper = styled.form`
   margin: 20px;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 `
 const FormTitle = styled.h2`
   font-family: 'Noto Serif JP';
@@ -73,9 +76,10 @@ const FormTitle = styled.h2`
   margin: 0;
 `
 const FormQuestion = styled.label`
+  align-self: start;
   font-family: 'Julius Sans One';
   color: #b77373;
-  margin: 0;
+  margin: 8px 0 0 0;
   padding: 0;
 `
 
@@ -97,6 +101,7 @@ const FormTextarea = styled.textarea`
   border: 1px solid #6c6c63;
   border-radius: 0;
   padding: 4px;
+  min-height: 80px;
   background: #f7f7f7;
   color: #6c6c63;
   font-family: 'Noto Serif JP';
@@ -109,6 +114,7 @@ const FormSelect = styled.select`
   border: 1px solid #6c6c63;
   border-radius: 0;
   padding: 4px;
+  min-height: 80px;
   background: #f7f7f7;
   color: #6c6c63;
   font-family: 'Noto Serif JP';
@@ -119,9 +125,11 @@ const FormButton = styled.button`
   -webkit-appearance: none;
   border-radius: none;
   border: 1px solid #6c6c63;
-  background: #f7f7f7;
+  background: #b77373;
   font-family: 'Noto Serif JP';
-  color: #b77373;
+  font-size: 0.8rem;
+  color: #f7f7f7;
   text-transform: uppercase;
   margin: 10px 0px 0px 0px;
+  padding: 4px;
 `
