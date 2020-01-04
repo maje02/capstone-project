@@ -17,6 +17,9 @@ export default function Home({ places }) {
     { name: 'Haushaltsgegenstände', checked: true },
     { name: 'Spielzeug', checked: true },
     { name: 'Schlafsäcke', checked: true },
+    { name: 'Kunst', checked: true },
+    { name: 'Fahrräder', checked: true },
+    { name: 'Heimwerkerbedarf', checked: true },
   ])
   const checkedCategories = categories.map(item =>
     item.checked ? item.name : ''
