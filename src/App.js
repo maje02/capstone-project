@@ -4,6 +4,7 @@ import { getData } from './services'
 import AppLayout from './AppLayout'
 import Header from './Header'
 import Home from './Home'
+import Form from './Form'
 import WrappedMap from './WrappedMapContainer'
 import Navigation from './Navigation'
 
@@ -20,6 +21,9 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             <Home places={places} />
+          </Route>
+          <Route path="/add">
+            <Form />
           </Route>
           <Route path="/map">
             <WrappedMap places={places} />{' '}

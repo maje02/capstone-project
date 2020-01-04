@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="26.125 17.875 17.875 17.875 17.875 26.125 15.125 26.125 15.125 17.875 6.87499996 17.875 6.87499996 15.125 15.125 15.125 15.125 6.87499996 17.875 6.87499996 17.875 15.125 26.125 15.125"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-201.000000, -288.000000)">
+            <g id="add" transform="translate(195.000000, 282.000000)">
+                <polygon id="Base" points="-6.87499959e-08 -6.87500155e-08 33.0000001 -6.87500155e-08 33.0000001 33.0000001 -6.87499959e-08 33.0000001"></polygon>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Icon"></g>
+                <rect id="↳-🎨-Color" fill="#F6D9D3" fill-rule="evenodd" mask="url(#mask-2)" x="0" y="0" width="33" height="33"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
