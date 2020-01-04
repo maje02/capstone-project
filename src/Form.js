@@ -51,8 +51,11 @@ export default function Form() {
         {/* <option value="">--Kategorien auswählen--</option> */}
         <option value="Bücher">Bücher</option>
         <option value="Elektronik">Elektronik</option>
+        <option value="Fahrräder">Fahrräder</option>
         <option value="Haushaltsgegenstände">Haushaltsgegenstände</option>
+        <option value="Heimwerkerbedarf">Heimwerkerbedarf</option>
         <option value="Kleidung">Kleidung</option>
+        <option value="Kunst">Kunst</option>
         <option value="Möbel">Möbel</option>
         <option value="Schlafsäcke">Schlafsäcke</option>
         <option value="Spielzeug">Spielzeug</option>
