@@ -1,13 +1,22 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
+import home from './img/home.svg'
+import add from './img/add.svg'
+import place from './img/place.svg'
 
 export default function Navigation() {
   return (
     <NavigationWrapper>
-      <NavItem to="/">HOME</NavItem>
-      <NavItem to="/add">ADD</NavItem>
-      <NavItem to="/map">MAP</NavItem>
+      <NavItem to="/">
+        <img src={home} alt="home" />
+      </NavItem>
+      <NavItem to="/add">
+        <img src={add} alt="add" />
+      </NavItem>
+      <NavItem to="/map">
+        <img src={place} alt="map" />
+      </NavItem>
     </NavigationWrapper>
   )
 }

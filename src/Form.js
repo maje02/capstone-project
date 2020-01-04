@@ -44,6 +44,17 @@ export default function Form() {
       <FormInput name="mail" placeholder="E-Mail-Adresse"></FormInput>
       <FormQuestion>Website</FormQuestion>
       <FormInput name="websiteURL" placeholder="Website"></FormInput>
+      <FormQuestion>Was kann hier abgegeben werden?</FormQuestion>
+      <FormSelect name="categories" multiple={true} size="2">
+        {/* <option value="">--Kategorien auswählen--</option> */}
+        <option value="Bücher">Bücher</option>
+        <option value="Elektronik">Elektronik</option>
+        <option value="Haushaltsgegenstände">Haushaltsgegenstände</option>
+        <option value="Kleidung">Kleidung</option>
+        <option value="Möbel">Möbel</option>
+        <option value="Schlafsäcke">Schlafsäcke</option>
+        <option value="Spielzeug">Spielzeug</option>
+      </FormSelect>
       <FormButton>Ort hinzufügen</FormButton>
     </FormWrapper>
   )
@@ -61,7 +72,7 @@ const FormTitle = styled.h2`
   font-size: 1.4rem;
   margin: 0;
 `
-const FormQuestion = styled.p`
+const FormQuestion = styled.label`
   font-family: 'Julius Sans One';
   color: #b77373;
   margin: 0;
@@ -91,6 +102,19 @@ const FormTextarea = styled.textarea`
   font-family: 'Noto Serif JP';
   font-size: 0.8rem;
 `
+
+const FormSelect = styled.select`
+  -webkit-appearance: none;
+  margin: 0px;
+  border: 1px solid #6c6c63;
+  border-radius: 0;
+  padding: 4px;
+  background: #f7f7f7;
+  color: #6c6c63;
+  font-family: 'Noto Serif JP';
+  font-size: 0.8rem;
+`
+
 const FormButton = styled.button`
   -webkit-appearance: none;
   border-radius: none;
